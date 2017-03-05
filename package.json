@@ -1,12 +1,12 @@
 {
   "name": "react-viewmore",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A component that automatically hides content when its height is greater than the browser's height.",
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
     "lint": "eslint src/*;",
-    "build": "rm -rf dist && mkdir dist && babel -d dist src",
+    "build": "rm -rf dist && mkdir dist && babel --sourceType=module -d dist src",
     "deploy-storybook": "storybook-to-ghpages",
     "release": "npm run rilize -- --non-interactive",
     "rilize": "$(npm bin)/release-it --github.releaseName=\"%s (`$(npm bin)/superheroes`)\"",
