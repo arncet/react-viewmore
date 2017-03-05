@@ -13,7 +13,7 @@
     "npm:publish": "npm run build && npm run release && npm run copy:readme && npm run copy:package && copy:style && cd dist && npm publish && cd .. && npm run deploy-storybook",
     "copy:package": "cp -R package.json dist/",
     "copy:readme": "cp -R README.md dist/",
-    "copy:style": "cp -R style.js dist/"
+    "copy:style": "cp -R src/style.js dist/"
   },
   "keywords": [
     "react",
