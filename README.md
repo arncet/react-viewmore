@@ -8,14 +8,14 @@ A component to hide automatically content when its height is larger than browser
 * [Properties](#documentation-)
 * [Development](#development-)
 * [License](#license-)
-* [Demo](https://arncet.github.io/react-readmore/)
+* [Demo](https://arncet.github.io/react-viewmore/)
 
 ##How to use :
 
-Install `react-readmore` via npm :
+Install `react-viewmore` via npm :
 
 ```
-npm install --save react-readmore
+npm install --save react-viewmore
 ```
 
 Use it :
@@ -23,7 +23,7 @@ Use it :
 ```javascript
 import Readmore from 'react-viewmore'
 
-<Readmore id='readmore-example'>
+<Readmore id='viewmore-example'>
 	<h1>Random title</h1>
 	<p>...</p>
 </Readmore>
