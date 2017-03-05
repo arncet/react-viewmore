@@ -1,6 +1,6 @@
 {
   "name": "react-viewmore",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A component that automatically hides content when its height is greater than the browser's height.",
   "main": "index.js",
   "scripts": {
