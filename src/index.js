@@ -17,6 +17,7 @@
  *   - onReadmore: (Function) : A callback called when the `view more` button is clicked
  *   - onReadless: (Function) : A callback called when the `view less` button is clicked
  *   - type (String || Component) : A custom HTML tag or a component to replace the default `view more` button.
+ *   - maxHeight (String) : A max height to hide the content
  *
  * Example :
  *   <Readmore id='readmore-example'>
@@ -80,10 +81,10 @@ class Readmore extends Component {
   }
 
   resize() {
-    const { id, offset } = this.props
-    const maxHeight = getBrowserHeight() 
+    const { id, offset, maxHeight } = this.props
+    const mh = maxHeight ? maxHeight : getBrowserHeight() 
     const elementHeight = this.refs[`read_more_${id}`].offsetHeight
-    if (elementHeight > (maxHeight + offset)) this.setState({ displayButton: true })
+    if (elementHeight > (mh + offset)) this.setState({ displayButton: true })
     else this.setState({ displayButton: false, hide: true })
   }
 }
@@ -100,6 +101,7 @@ Readmore.defaultProps = {
   readLessText: 'View less',
   offset: 0,
   type: 'button',
+  maxHeight: 0,
   onHide: () => {},
   onShow: () => {},
   onReadmore: () => {},

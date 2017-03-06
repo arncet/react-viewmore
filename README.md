@@ -5,7 +5,7 @@ A component to hide automatically content when its height is larger than browser
 ##Navigation :
 
 * [How to use](#how-to-use-)
-* [Properties](#documentation-)
+* [Properties](#properties-)
 * [Development](#development-)
 * [License](#license-)
 * [Demo](https://arncet.github.io/react-viewmore/)
@@ -43,10 +43,11 @@ import Readmore from 'react-viewmore'
  * **`onReadmore`**: *(Function)* : A callback called when the `view more` button is clicked
  * **`onReadless`**: *(Function)* : A callback called when the `view less` button is clicked
  * **`type`** *(String || Component)* : A custom HTML tag or a component to replace the default `view more` button.
+ * **`maxHeight`** *(String)* : A max height to hide the content.
 
 ---------------------------------------
 
-##Development:
+##Development :
 
 ```
 npm install 		  //Install node modules

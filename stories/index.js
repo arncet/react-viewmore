@@ -6,6 +6,7 @@ import Offset from './Offset'
 import Callbacks from './Callbacks'
 import CustomButtonHTML from './CustomButtonHTML'
 import CustomButtonComponent from './CustomButtonComponent'
+import MaxHeight from './MaxHeight'
 
 storiesOf('Button')
   .add('Default', () => <Default />)
@@ -14,3 +15,4 @@ storiesOf('Button')
   .add('Callbacks', () => <Callbacks />)
   .add('Custom button (HTML)', () => <CustomButtonHTML />)
   .add('Custom button (component)', () => <CustomButtonComponent />)
+  .add('Max height', () => <MaxHeight />)
